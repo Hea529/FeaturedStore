@@ -1,0 +1,30 @@
+# ============== IDEA 相关（重点！就是你提交列表里那些 .idea 文件） ==============
+.idea/
+*.iml
+/shelf/
+/workspace.xml
+/queries/
+/dataSources/
+/dataSources.local.xml
+/httpRequests/
+
+# ============== Maven 后端 ==============
+target/
+!target/classes/  # 不要，直接整包忽略target
+*.jar
+*.war
+
+# ============== 前端 Vue 相关（Admin、Web模块） ==============
+node_modules/
+dist/
+.npm
+.idea/*
+*.local
+
+# ============== 日志、临时文件 ==============
+*.log
+*.out
+
+# ============== 系统缓存文件 ==============
+.DS_Store
+Thumbs.db
