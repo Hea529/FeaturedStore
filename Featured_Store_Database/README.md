@@ -1,0 +1,3 @@
+# Featured_Store_Database
+数据库初始化SQL脚本
+导入顺序：先建库脚本，再初始化基础数据脚本
