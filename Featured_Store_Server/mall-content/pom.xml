@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.preferredmall</groupId>
+        <artifactId>Featured_Store_Server</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>mall-content</artifactId>
+    <packaging>jar</packaging>
+    <name>mall-content</name>
+    <description>内容运营域：轮播 / 公告 / FAQ / 工厂信息 / 反馈</description>
+
+    <dependencies>
+        <dependency><groupId>com.preferredmall</groupId><artifactId>mall-common</artifactId></dependency>
+        <dependency><groupId>com.preferredmall</groupId><artifactId>mall-infra</artifactId></dependency>
+        <dependency><groupId>com.preferredmall</groupId><artifactId>mall-security</artifactId></dependency>
+        <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-web</artifactId></dependency>
+        <dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId></dependency>
+    </dependencies>
+</project>

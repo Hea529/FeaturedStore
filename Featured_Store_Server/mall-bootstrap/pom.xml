@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.preferredmall</groupId>
+        <artifactId>Featured_Store_Server</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>mall-bootstrap</artifactId>
+    <packaging>jar</packaging>
+    <name>mall-bootstrap</name>
+    <description>启动模块：main 类 + application.yml + 打包插件</description>
+
+    <dependencies>
+        <dependency><groupId>com.preferredmall</groupId><artifactId>mall-user</artifactId></dependency>
+        <dependency><groupId>com.preferredmall</groupId><artifactId>mall-product</artifactId></dependency>
+        <dependency><groupId>com.preferredmall</groupId><artifactId>mall-order</artifactId></dependency>
+        <dependency><groupId>com.preferredmall</groupId><artifactId>mall-payment</artifactId></dependency>
+        <dependency><groupId>com.preferredmall</groupId><artifactId>mall-coupon</artifactId></dependency>
+        <dependency><groupId>com.preferredmall</groupId><artifactId>mall-content</artifactId></dependency>
+        <dependency><groupId>com.preferredmall</groupId><artifactId>mall-im</artifactId></dependency>
+
+        <!-- Knife4j 接口文档（基于 springdoc） -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId></dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>preferredmall-server</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
